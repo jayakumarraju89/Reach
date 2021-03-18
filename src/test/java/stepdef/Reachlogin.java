@@ -24,11 +24,6 @@ public class Reachlogin {
 		Thread.sleep(2000);
 } 
 	
-	
-/*	@Given("enter user name and password and click on login button")
-	public void enter_user_name_and_password_and_click_on_login_button() {
-		
-	}	*/
 
 	@Given("verify login sucessful and and landed in tenant tab")
 	public void verify_login_sucessful_and_and_landed_in_tenant_tab() throws InterruptedException {
