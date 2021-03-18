@@ -43,7 +43,7 @@ public class Reachlogin {
 		WebElement tenantfilter = driver.findElement(By.xpath("//input[@class='form-control input-sm']"));
 /*		JavascriptExecutor js = (JavascriptExecutor)driver;
 //		js.executeScript("arguments[0].scrollIntoView(true);", tenantfilter);
-		js.executeScript("arguments[0].click()", tenantfilter);	*/
+//		js.executeScript("arguments[0].click()", tenantfilter);	*/
 		
 		driver.findElement(By.xpath("//input[@class='form-control input-sm']")).sendKeys("sampletd");
 		driver.findElement(By.xpath("//button[@class='btn btn-success dropdown-toggle']")).click();
