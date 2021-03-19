@@ -96,22 +96,29 @@ public class Reachlogin {
 	}
 	
 	@Then("Get count from open tab and validate with total entries")
-	public void get_count_from_open_tab_and_validate_with_total_entries() throws InterruptedException {
-		
-		
+	public void get_count_from_open_tab_and_validate_with_total_entries() throws InterruptedException {		
 		
 		WebElement open = driver.findElement(By.xpath("(//span[@class='badge'])[2]"));
-		String count = open.getText();
-		System.out.println("Open count = " + count);
+		String count = open.getText();		
 		WebElement showing = driver.findElement(By.xpath("//div[@class='dataTables_info']"));
 		String count1 = showing.getText();
-		System.out.println("Showing count = " + count1);
+		
 		Thread.sleep(3000);
-	/*	Pattern p = Pattern.compile("[^\\d]*[\\d]+[^\\d]+[\\d]+[^\\d]+([\\d]+)");
-		Matcher  m = p.matcher(count1);
-        if (m.find()) {
-            System.out.println(m.group()); // second matched digits
-        }	*/
+		
+		String s = count1;		
+		String[] a = s.split(" ");
+		int i = 0;
+		for (String x : a) {
+			//		System.out.println("index of " + i + " = " + x);
+				//	i = i + 1;
+					
+				}
+				
+				System.out.println(a[(a.length-1) - 1]);
+				System.out.println("Open count = " + count);
+				System.out.println("Showing count = " + a[(a.length-1) - 1]);
+				System.out.println(count.equals(a[(a.length-1) - 1]));	
+					
 	}
 
 	@Then("Get count from submitted tab and validate with total entries")
@@ -120,15 +127,28 @@ public class Reachlogin {
 		driver.findElement(By.xpath("(//a[@data-toggle ='tab'])[3]")).click();
 		WebElement open = driver.findElement(By.xpath("(//span[@class='badge'])[3]"));
 		String count = open.getText();
-		System.out.println("Open count = " + count);
 		Thread.sleep(2000);
 		WebElement showing = driver.findElement(By.xpath("(//div[@class='col-md-6'])[2]"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", showing);
 		js.executeScript("arguments[0].click()", showing);
 		String count1 = showing.getText();
-		System.out.println("Showing count = " + count1);
 		Thread.sleep(3000);
+		
+		String s = count1;		
+		String[] a = s.split(" ");
+		int i = 0;
+		for (String x : a) {
+			//		System.out.println("index of " + i + " = " + x);
+				//	i = i + 1;
+					
+				}
+				
+				System.out.println(a[(a.length-1) - 1]);
+				System.out.println("Open count = " + count);
+				System.out.println("Showing count = " + a[(a.length-1) - 1]);
+				System.out.println(count.equals(a[(a.length-1) - 1]));	
+		
 		
 	}
 

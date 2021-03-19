@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-18T07:49:57.462Z",
+        "start_timestamp": "2021-03-19T09:34:00.739Z",
         "before": [
           {
             "result": {
-              "duration": 19619832000,
+              "duration": 19318886400,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 172301,
+              "duration": 124100,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4095673001,
+              "duration": 4065427900,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "verify login sucessful and and landed in tenant tab",
             "match": {
               "location": "Reachlogin.verify_login_sucessful_and_and_landed_in_tenant_tab()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 3406100600,
+              "duration": 3173822400,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "search for sampleTd as tenant in search filter",
             "match": {
               "location": "Reachlogin.search_for_sampleTd_as_tenant_in_search_filter()"
@@ -59,10 +59,10 @@
           },
           {
             "result": {
-              "duration": 1584774500,
+              "duration": 1303832100,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "click on sampleTd entry from the list",
             "match": {
               "location": "Reachlogin.click_on_sampleTd_entry_from_the_list()"
@@ -71,10 +71,10 @@
           },
           {
             "result": {
-              "duration": 111570600,
+              "duration": 55777800,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "verify SampleTD tenant page is opened",
             "match": {
               "location": "Reachlogin.verify_SampleTD_tenant_page_is_opened()"
@@ -83,10 +83,10 @@
           },
           {
             "result": {
-              "duration": 5136823799,
+              "duration": 5137177500,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "Navigate to the Tenant url and click on the url",
             "match": {
               "location": "Reachlogin.navigate_to_the_Tenant_url_and_click_on_the_url()"
@@ -95,10 +95,10 @@
           },
           {
             "result": {
-              "duration": 7526509500,
+              "duration": 6667307900,
               "status": "passed"
             },
-            "line": 12,
+            "line": 10,
             "name": "Enter email and password then click on login button",
             "match": {
               "location": "Reachlogin.enter_email_and_password_then_click_on_login_button()"
@@ -107,10 +107,10 @@
           },
           {
             "result": {
-              "duration": 3152150600,
+              "duration": 3056620400,
               "status": "passed"
             },
-            "line": 13,
+            "line": 11,
             "name": "Get count from open tab and validate with total entries",
             "match": {
               "location": "Reachlogin.get_count_from_open_tab_and_validate_with_total_entries()"
@@ -119,10 +119,10 @@
           },
           {
             "result": {
-              "duration": 5396580100,
+              "duration": 5321847700,
               "status": "passed"
             },
-            "line": 14,
+            "line": 12,
             "name": "Get count from submitted tab and validate with total entries",
             "match": {
               "location": "Reachlogin.get_count_from_submitted_tab_and_validate_with_total_entries()"
